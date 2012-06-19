@@ -1,0 +1,10 @@
+In this I have implemented quick sort both in serial and parallel manner. The size of array is large so that the difference in performance is visible. Also to avoid unnecessay overheads in parallel implementation once the size of array reaches below a threshold (in this case it is 1000) it is processed serially. 
+
+To view performance of both codes:
+compile them with gcc filename -fopen
+and execute as: time ./a.out
+
+
+Thanks:
+feel free to contact me in case you have any doubt
+gtgbansal
