@@ -48,23 +48,17 @@ void qsort_parallel(int l,int r){
 }
 int main(){
 	int n,i;
-	//scanf("%d",&n);
+
 	n=10000000;
 	int range=10000;
 	srand(time(NULL));
 	for( i=0;i<n;i++)
 		a[i]=rand()%range;
-//	printf("input array is ------------------------------------------------------------------------------------\n");
-///	for(i=0;i<n;i++)
-//		printf("%d ",a[i]);
-//	printf("\n");
+
 #pragma omp parallel	
 	#pragma omp single
 	qsort_parallel(0,n-1);
-//	printf("output array is ------------------------------------------------------------------------------------\n");
-//	for(i=0;i<n;i++)
-//		printf("%d ",a[i]);
-//	printf("\n");
+
 	
 	return 0;
 }
