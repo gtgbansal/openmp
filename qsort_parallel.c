@@ -22,7 +22,7 @@ void qsort_serial(int l,int r){
 }
 void qsort_parallel(int l,int r){
 	if(r>l){
-	//	printf("range(%d %d) is performed by thread %d\n",l,r,omp_get_thread_num());
+
 		int pivot=a[r],tmp;
 		int less=l-1,more;
 		for(more=l;more<=r;more++){
