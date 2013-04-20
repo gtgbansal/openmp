@@ -49,7 +49,7 @@ void qsort_parallel(int l,int r){
 int main(){
 	int n,i;
 
-	n=10000000;
+	n=10000000; //increased the value of n
 	int range=100000;
 	srand(time(NULL));
 	for( i=0;i<n;i++)
