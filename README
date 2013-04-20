@@ -1,3 +1,5 @@
+openmp: make your code wonderfull
+
 Serial quick sort implementation : qsort_serial.c
 Parallel quick Sort implementation  (threaded with OpenMP): qsort_parallel.c
 In this I have implemented quick sort both in serial and parallel manner. The size of array is large so that the difference in performance is visible. Also to avoid unnecessay overheads in parallel implementation once the size of array reaches below a threshold (in this case it is 1000) it is processed serially. 
